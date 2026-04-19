@@ -1,0 +1,51 @@
+# Atividade 2 — O processo como abstração de execução
+# Preencha este arquivo durante a atividade.
+# ─────────────────────────────────────────────────────
+
+# PARTE A — Inspecionar o processo atual
+# Cole abaixo a saída de cada comando e anote o que observou.
+
+echo $$
+  PID do shell: 
+
+cat /proc/[PID]/status   (substitua [PID] pelo número real)
+  PID:
+  PPID (processo pai):
+  State:
+
+ps aux (primeiras linhas)
+  [cole aqui]
+
+
+# PARTE B — Processo filho
+# Cole a saída dos comandos e responda:
+
+sleep 60 &
+  PID do filho: 
+
+cat /proc/[FILHO]/status | grep -E "Pid|PPid|State"
+  [cole aqui]
+
+ps -o pid,ppid,stat,cmd (antes do kill)
+  [cole aqui]
+
+ps -o pid,ppid,stat,cmd (depois do kill)
+  [cole aqui]
+
+
+# PARTE C — Questões de síntese
+
+# 1. O slide da apresentação mostrava um "registro de ativação" salvo
+#    para cada processo. Em qual arquivo dentro de /proc/<PID>/ você
+#    encontrou informação equivalente? O que ele contém?
+
+Resposta 1:
+
+
+# 2. Execute: cat /proc/1/cmdline
+#    Qual é o processo de PID 1 e qual é seu papel histórico?
+#    Conecte com o conceito de "supervisor" da apresentação.
+
+Saída do comando:
+
+Resposta 2:

@@ -10,22 +10,26 @@ IFTM — Campus Uberlândia Centro
 
 Este é um repositório-template. Você **não deve trabalhar diretamente aqui**.
 
-**Passo 1 — Criar sua cópia:**
+**Passo 1 — Criar sua cópia:**  
 Clique em **"Use this template"** → **"Create a new repository"**.  
 Nomeie como `lab-so-dev` e deixe como **público**.
 
-**Passo 2 — Abrir o ambiente de trabalho:**  
-No seu repositório, clique em **"Code"** → **"Codespaces"** → **"Create codespace on main"**.  
+**Passo 2 — Registrar sua entrega:**  
+Acesse a issue de entrega e cole o link do seu repositório como comentário:  
+👉 https://github.com/aslemos2021/lab-so-dev/issues/1
+
+**Passo 3 — Abrir o ambiente de trabalho:**  
+No **seu** repositório, clique em **"Code"** → **"Codespaces"** → **"Create codespace on main"**.  
 Um terminal Linux abrirá no navegador. Aguarde cerca de 30 segundos.
 
-**Passo 3 — Verificar as ferramentas:**
+**Passo 4 — Verificar as ferramentas:**
 ```bash
 gcc --version
 strace --version
 make --version
 ```
 
-**Passo 4 — Trabalhar e entregar:**  
+**Passo 5 — Trabalhar e entregar:**  
 Ao final de cada atividade, no terminal:
 ```bash
 git add .

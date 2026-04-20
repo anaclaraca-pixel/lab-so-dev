@@ -7,38 +7,30 @@
 # explicando a função do diretório com suas próprias palavras.
 
 /proc
-  comando: 
-  observação: 
+  
 
 /proc/cpuinfo
-  comando: 
-  observação: 
+  
 
 /proc/meminfo
-  comando: 
-  observação: 
+  
 
 /proc/uptime
-  comando: 
-  observação: 
+  
 
 /bin
-  comando: 
-  observação: 
 
+  
 /dev
-  comando: 
-  observação: 
+  
 
 /etc
-  comando: 
-  observação: 
+  
 
 
 # PARTE B — Questão de reflexão
 # A apresentação mostrou que o supervisor controlava o acesso a I/O
 # e que rotinas de dispositivo traduziam comandos.
 # Em qual diretório do Linux você reconhece essa função?
-# Justifique em uma frase.
 
 Resposta:

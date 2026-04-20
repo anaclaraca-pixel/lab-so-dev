@@ -33,7 +33,7 @@ make --version
 Ao final de cada atividade, no terminal:
 ```bash
 git add .
-git commit -m "atividade 1 concluida"
+git commit -m "atividade n concluida"
 git push
 ```
 O professor avaliará o seu repositório em `github.com/[seu-usuario]/lab-so-dev`.

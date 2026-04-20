@@ -16,7 +16,7 @@ Nomeie como `lab-so-dev` e deixe como **público**.
 
 **Passo 2 — Registrar sua entrega:**  
 Acesse a issue de entrega e cole o link do seu repositório como comentário:  
-👉 https://github.com/aslemos2021/lab-so-dev/issues/1
+👉 [aqui](https://github.com/aslemos2021/lab-so-dev/issues/1)
 
 **Passo 3 — Abrir o ambiente de trabalho:**  
 No **seu** repositório, clique em **"Code"** → **"Codespaces"** → **"Create codespace on main"**.  
@@ -42,7 +42,7 @@ O professor avaliará o seu repositório em `github.com/[seu-usuario]/lab-so-dev
 
 ## Ambiente alternativo — JSLinux
 
-Se não for possível usar o Codespaces, acesse **jslinux.org** e selecione  
+Se não for possível usar o Codespaces, acesse **[jslinux.org](https://bellard.org/jslinux/)** e selecione  
 **"Fedora 33 (x86_64)"**. O roteiro de comandos é idêntico.  
 Nesse caso, copie o conteúdo produzido e cole nos arquivos do repositório  
 diretamente pela interface web do GitHub (ícone de lápis em cada arquivo).
@@ -60,9 +60,10 @@ lab-so-dev/
 └── bloco2-dev/
     ├── soma.c            ← Atividade 4
     ├── notas.txt         ← Atividade 4
-    ├── relatorio.sh      ← Atividade 5
-    ├── Makefile          ← Atividade 6
-    └── reflexao.txt      ← Atividades 5 e 6
+    ├── ola.c             ← Atividade 5
+    ├── relatorio.sh      ← Atividade 6
+    ├── Makefile          ← Atividade 7
+    └── reflexao.txt      ← Atividades 6 e 7
 ```
 
 Preencha cada arquivo conforme as instruções da ficha de atividades.

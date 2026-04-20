@@ -42,7 +42,7 @@ O professor avaliará o seu repositório em `github.com/[seu-usuario]/lab-so-dev
 
 ## Ambiente alternativo — JSLinux
 
-Se não for possível usar o Codespaces, acesse **[jslinux.org](https://bellard.org/jslinux/)** e selecione  
+Se não for possível usar o Codespaces, acesse o **[JSLinux](https://bellard.org/jslinux/)** e selecione  
 **"Fedora 33 (x86_64)"**. O roteiro de comandos é idêntico.  
 Nesse caso, copie o conteúdo produzido e cole nos arquivos do repositório  
 diretamente pela interface web do GitHub (ícone de lápis em cada arquivo).

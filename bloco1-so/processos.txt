@@ -25,7 +25,7 @@ ps aux (primeiras linhas)
 # PARTE B — Processo filho
 # Cole a saída dos comandos e responda:
 
-sleep 60 &
+sleep 5m &
   PID do filho: 
 
 cat /proc/[FILHO]/status | grep -E "Pid|PPid|State"
@@ -43,17 +43,14 @@ ps -o pid,ppid,stat,cmd (depois do kill)
 # 1. O campo PPID em /proc/$$/status indica o processo pai do shell.
 #    Execute ps -o pid,ppid,cmd e localize o par shell -> processo pai.
 #    O que esse encadeamento sugere sobre como os processos sao
-#    organizados no Linux?
+#    criados no Linux?
 
 Resposta 1:
 
 
 # 2. O arquivo /proc/<PID>/status mostra o campo State com uma letra
 #    (S, R, Z...). Depois de executar kill $FILHO e rodar ps novamente,
-#    o que aconteceu com o processo filho? O que isso indica sobre o
-#    ciclo de vida de um processo?
-
-Estado antes do kill:
-Estado depois do kill (ou ausencia do processo):
+#    o que aconteceu com o processo filho? O que isso te faz pensar  
+#    sobre a vida de um processo?
 
 Resposta 2:

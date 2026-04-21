@@ -35,8 +35,8 @@ ps -o pid,ppid,stat,cmd (depois do kill)
 
 # PARTE C — Questões de síntese
 
-# 1. O slide da apresentação mostrava um "registro de ativação" salvo
-#    para cada processo. Em qual arquivo dentro de /proc/<PID>/ você
+# 1. O slide da apresentação da aula passada mostrava um "registro de ativação"
+#    salvo para cada processo. Em qual arquivo dentro de /proc/<PID>/ você
 #    encontrou informação equivalente? O que ele contém?
 
 Resposta 1:

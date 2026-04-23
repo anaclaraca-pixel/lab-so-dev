@@ -6,7 +6,7 @@
 # Para cada diretório, registre o comando executado e uma linha
 # explicando a função do diretório com suas próprias palavras.
 
-/proc teste
+/proc
   
 
 /proc/cpuinfo

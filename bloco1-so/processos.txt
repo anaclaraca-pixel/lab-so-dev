@@ -13,6 +13,11 @@ cat /proc/[PID]/status   (substitua [PID] pelo número real)
   PPID (processo pai):
   State:
 
+cat /proc/[PID]/stat (campos relevantes)
+  Campo 2 — nome do executável:
+  Campo 3 — estado:
+  Campos 14 e 15 — utime / stime:
+
 ps aux (primeiras linhas)
   [cole aqui]
 
@@ -20,7 +25,7 @@ ps aux (primeiras linhas)
 # PARTE B — Processo filho
 # Cole a saída dos comandos e responda:
 
-sleep 60 &
+sleep 5m &
   PID do filho: 
 
 cat /proc/[FILHO]/status | grep -E "Pid|PPid|State"
@@ -35,17 +40,17 @@ ps -o pid,ppid,stat,cmd (depois do kill)
 
 # PARTE C — Questões de síntese
 
-# 1. O slide da apresentação mostrava um "registro de ativação" salvo
-#    para cada processo. Em qual arquivo dentro de /proc/<PID>/ você
-#    encontrou informação equivalente? O que ele contém?
+# 1. O campo PPID em /proc/$$/status indica o processo pai do shell.
+#    Execute ps -o pid,ppid,cmd e localize o par shell -> processo pai.
+#    O que esse encadeamento sugere sobre como os processos sao
+#    criados no Linux?
 
 Resposta 1:
 
 
-# 2. Execute: cat /proc/1/cmdline
-#    Qual é o processo de PID 1 e qual é seu papel histórico?
-#    Conecte com o conceito de "supervisor" da apresentação.
-
-Saída do comando:
+# 2. O arquivo /proc/<PID>/status mostra o campo State com uma letra
+#    (S, R, Z...). Depois de executar kill $FILHO e rodar ps novamente,
+#    o que aconteceu com o processo filho? O que isso te faz pensar  
+#    sobre a vida de um processo?
 
 Resposta 2:

@@ -1,6 +1,6 @@
 # Atividade 3 — Modo usuário × modo kernel
 # Preencha este arquivo durante a atividade.
-# ─────────────────────────────────────────────────────
+# ───────────────────────────────────────────
 
 # PARTE A — Observar syscalls com strace
 

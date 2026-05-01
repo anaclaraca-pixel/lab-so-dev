@@ -11,6 +11,7 @@
 Resposta:
 
 # ─────────────────────────────────────────────────────
+
 # ATIVIDADE 7 — Make
 
 # 1. O monitor histórico verificava a conclusão de cada job antes

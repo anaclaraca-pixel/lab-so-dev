@@ -10,4 +10,19 @@
 
 Resposta:
 
+# ─────────────────────────────────────────────────────
+# ATIVIDADE 7 — Make
 
+# 1. O monitor histórico verificava a conclusão de cada job antes
+#    de despachar o próximo. No make, qual mecanismo cumpre esse
+#    papel? Como o make sabe que não precisa recompilar um arquivo
+#    que não mudou?
+
+Resposta 1:
+
+
+# 2. O monitor unificava "supervisor, carregador e rotinas de I/O
+#    sob uma interface textual". O que o Makefile unifica no fluxo
+#    de desenvolvimento moderno?
+
+Resposta 2:

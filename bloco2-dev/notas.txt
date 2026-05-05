@@ -11,12 +11,9 @@ Observação:
 
 # FASE 2 — Assembly (gcc -S)
 # Cole aqui 5 a 10 linhas de soma.s que você considera mais
-# interessantes e explique o que cada uma faz.
+# interessantes.
 
 Trecho de soma.s:
-
-Explicação:
-
 
 # FASE 3 — Código objeto (gcc -c)
 # Cole a saída de: file soma.o
@@ -48,7 +45,7 @@ Saída de ./soma:
 Resposta 1:
 
 
-# 2. Compare soma.i, soma.s e soma.o: qual das duas saídas é análoga
-#    ao "código objeto" do montador histórico?
+# 2. Você gerou três arquivos intermediários: soma.i (pré-processado), soma.s (assembly),
+#    soma.o (objeto). Qual desses é o que o computador realmente executa?
 
 Resposta 2:

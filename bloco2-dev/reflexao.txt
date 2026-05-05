@@ -5,7 +5,7 @@
 # ATIVIDADE 6 — O shell como JCL moderno
 
 # O slide da genealogia mostrou que o JCL usava comandos como
-# // ASSIGN SYS004,TAPE para associar um trabalho a um dispositivo.
+# // ASSIGN SYS004,TAPE para associar um job a um dispositivo.
 # No shell moderno, qual mecanismo cumpre papel equivalente?
 
 Resposta:

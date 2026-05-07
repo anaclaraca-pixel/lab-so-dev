@@ -7,24 +7,31 @@
 # explicando a função do diretório com suas próprias palavras.
 
 /proc
+Sistema de arquivos virtual que mostra informações do sistema e dos processos em tempo real
   
 
 /proc/cpuinfo
+Mostra detalhes do processador, como modelo, velocidade e características da CPU
   
 
 /proc/meminfo
+Exibe informações sobre a memória do sistema, como total, livre e em uso.
   
 
 /proc/uptime
+Mostra há quanto tempo o sistema está ligado e quanto tempo ficou parado.
   
 
 /bin
+tem programas executáveis essenciais que o sistema usa no dia a dia.
 
   
 /dev
+Representa dispositivos do computador como arquivos, como disco, teclado e terminal.
   
 
 /etc
+Guarda arquivos de configuração do sistema, como nome da máquina e usuários.
   
 
 
@@ -33,4 +40,4 @@
 # e que rotinas de dispositivo traduziam comandos.
 # Em qual diretório do Linux você reconhece essa função?
 
-Resposta:
+Resposta:/dev, porque nele os dispositivos de entrada e saída são representados como arquivos, permitindo que o sistema operacional controle e traduza o acesso pra eles.

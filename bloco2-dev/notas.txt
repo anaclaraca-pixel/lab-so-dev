@@ -6,7 +6,7 @@
 # Quantas linhas tem soma.i? O que o pré-processador expandiu?
 
 Linhas em soma.i: 749
-Observação:
+Observação:O pré-processador expandiu as diretivas como #include <stdio.h>, inserindo o conteúdo completo da biblioteca no arquivo, além de substituir macros (#define).
 
 
 # FASE 2 — Assembly (gcc -S)
@@ -14,26 +14,39 @@ Observação:
 # interessantes.
 
 Trecho de soma.s:
+pushq   %rbp
+    movq    %rsp, %rbp
+    movl    %edi, -4(%rbp)
+    movl    %esi, -8(%rbp)
+    movl    -4(%rbp), %edx
+    movl    -8(%rbp), %eax
+    addl    %edx, %eax
+    popq    %rbp
+    ret
 
 # FASE 3 — Código objeto (gcc -c)
 # Cole a saída de: file soma.o
 
-file soma.o:
+file soma.o: ELF 64-bit LSB relocatable, x86-64, version 1 (SYSV), not stripped
 
 # Cole a saída de: nm soma.o
 
 nm soma.o:
+0000000000000000 T soma
+                 U printf
+0000000000000020 T main
 
 # Quais símbolos aparecem? O que significa o marcador "U" ao lado
 # de printf?
 
 Observação sobre nm:
+Os símbolos "soma" e "main" aparecem como T (definidos no código). Já "printf" aparece como U (Undefined), pois é uma função externa que será resolvida depois pelo ligador.
 
 
 # FASE 4 — Ligação (gcc soma.o -o soma)
 # O que mudou após a ligação? Execute ./soma e registre a saída.
 
-Saída de ./soma:
+Saída de ./soma: soma dá 5
 
 
 # QUESTÕES DE SÍNTESE
@@ -43,9 +56,11 @@ Saída de ./soma:
 # ligador em relação a esse símbolo? 
 
 Resposta 1:
+O ligador é responsável por encontrar a definição do símbolo printf em bibliotecas externas (como a libc) e conectá-la ao programa, resolvendo o símbolo que estava indefinido.
 
 
 # 2. Você gerou três arquivos intermediários: soma.i (pré-processado), soma.s (assembly),
 #    soma.o (objeto). Qual desses é o que o computador realmente executa?
 
 Resposta 2:
+O computador executa o arquivo executável final (soma), gerado após a etapa de ligação, e não os arquivos intermediários.

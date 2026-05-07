@@ -7,7 +7,7 @@
 # Cole abaixo a linha relevante da saída de:
 # strace echo "ola" 2>&1 | grep write
 
-Saída filtrada:
+Saída filtrada: write(1, "ola\n", 4) = 4
 
 # Anote:
 #   Argumento 1 (file descriptor):
@@ -15,18 +15,25 @@ Saída filtrada:
 #   Valor de retorno:
 
 fd:
-conteúdo:
-retorno:
+conteúdo: "ola\n"
+retorno: 4
 
 
 # PARTE B — Programa C com write() direto
 
 # Cole aqui o código de syscall_direto.c que você escreveu:
 
-[código-fonte]
+[#include <unistd.h>
+
+int main() {
+    const char msg[] = "Modo usuario -> kernel via write()\n";
+    write(1, msg, sizeof(msg) - 1);
+    return 0;
+}]
 
 
 # Cole aqui a linha write(...) da saída de strace -o strace.txt ./syscall_direto:
+write(1, "Modo usuario -> kernel via write()\n", 36) = 36
 
 [saída do strace]
 
@@ -37,7 +44,7 @@ retorno:
 #    Com base no que o strace revelou, explique com suas palavras como um programa
 #    de usuário consegue fazer I/O sem executar instruções privilegiadas diretamente.
 
-Resposta 1:
+Resposta 1: Um programa em modo usuário não executa instruções de I/O diretamente. Em vez disso, ele usa chamadas de sistema (syscalls), como write(), que transferem o controle para o kernel. O kernel então executa a operação de I/O com privilégios e devolve o resultado ao programa.
 
 
 # 2. Na apresentação sobre a genealogia do software, vimos que os programas de canal
@@ -46,3 +53,4 @@ Resposta 1:
 #    operacional moderno herda esse papel? 
 
 Resposta 2:
+Os drivers de dispositivo junto com o mecanismo de DMA herdam esse papel, pois são responsáveis por intermediar a comunicação entre a memória e os dispositivos sem exigir controle direto da CPU para cada operação.

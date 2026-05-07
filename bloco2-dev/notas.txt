@@ -5,7 +5,7 @@
 # FASE 1 — Pré-processador (gcc -E)
 # Quantas linhas tem soma.i? O que o pré-processador expandiu?
 
-Linhas em soma.i:
+Linhas em soma.i: 749
 Observação:
 
 

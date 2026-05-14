@@ -20,6 +20,10 @@ Resposta:
 #    que não mudou?
 
 Resposta 1:
+No make, o mecanismo que cumpre o papel do monitor histórico é a verificação de **timestamps** e **dependências**. 
+Para cada alvo, o make compara a data de modificação do arquivo alvo com a de seus arquivos dependentes. 
+Se alguma dependência foi modificada mais recentemente que o alvo, o make executa os comandos para recompilar. 
+Caso contrário, ele conclui que o arquivo está atualizado e não precisa recompilar, evitando trabalho desnecessário.
 
 
 # 2. O monitor unificava "supervisor, carregador e rotinas de I/O
@@ -27,3 +31,7 @@ Resposta 1:
 #    de desenvolvimento moderno?
 
 Resposta 2:
+O Makefile unifica todas as etapas do fluxo de desenvolvimento em um único ponto de controle. 
+Ele coordena a **compilação do código**, **limpeza de arquivos temporários**, **geração de relatórios** 
+e outras tarefas automatizadas. Dessa forma, o desenvolvedor pode executar um único comando (`make`)
+para reproduzir todo o build ou partes específicas do projeto, garantindo consistência e reprodutibilidade.
